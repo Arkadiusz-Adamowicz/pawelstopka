@@ -108,6 +108,7 @@ const Contact = () => {
                 cols='30'
                 rows='6'
                 name='message'
+                placeholder='Wiadomość'
                 required
                 className='w-full px-2 py-2 mb-2 rounded-xl border resize-none border-[#6366F1] outline-none'
               ></textarea>
