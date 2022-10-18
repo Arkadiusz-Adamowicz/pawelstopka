@@ -141,7 +141,7 @@ const Offer = () => {
       </div>
       <div className='separator-reverse w-full rounded-b-xl'></div>
       <div>
-        {/* pdf *}
+        
       </div>
     </section>
   );
