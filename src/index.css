@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overlflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+body {
+  background: black;
+}
+
+li {
+  padding: 0 1rem;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+  color: #6366f1;
+  transition: 0.1s ease;
+}
+
+li:last-child {
+  padding-right: 0;
+}
+
+.mobile-nav ul {
+  margin-top: -100px;
+}
+
+.mobile-nav li {
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.mobile-nav {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -28.47%,
+    #6366f1 -76%,
+    #11101d 93.61%
+  );
+}
+
+.pb {
+  padding-bottom: 1rem;
+}
+
+.p-color {
+  color: #6366f1;
+}
+
+.p-bgcolor {
+  background-color: #6366f1;
+}
+
+.separator {
+  height: 50px;
+  background: linear-gradient(
+    177deg,
+    rgba(255, 255, 255, 1) 48%,
+    rgba(99, 102, 241, 1) 48%
+  );
+}
+
+.separator-reverse {
+  height: 50px;
+  background: linear-gradient(
+    177deg,
+    rgba(99, 102, 241, 1) 48%,
+    rgba(255, 255, 255, 1) 48%
+  );
+}
