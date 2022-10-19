@@ -16,7 +16,7 @@ const Navbar = () => {
           </h2>
         </Link>
 
-        <div>
+        <div className='nav'>
           <ul className='hidden md:flex'>
             <li>
               <Link to='/'>Strona Główna</Link>

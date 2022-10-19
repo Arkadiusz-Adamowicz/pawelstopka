@@ -24,8 +24,11 @@ body {
   background: black;
 }
 
-li {
+.nav li {
   padding: 0 1rem;
+}
+
+li {
   cursor: pointer;
   color: white;
   transition: all 0.2s ease-in-out;
@@ -58,6 +61,10 @@ li:last-child {
     #6366f1 -76%,
     #11101d 93.61%
   );
+}
+
+.footer li {
+  padding: 0 .5rem;
 }
 
 .pb {
