@@ -8,13 +8,13 @@ const About = () => {
     <section className='max-w-[1200px] mx-auto px-3 bg-white h-full rounded-xl'>
       <motion.div
         className='flex md:flex-row md:gap-8 md:p-8 p-6 flex-col-reverse justify-around items-center h-full'
-        transition={{ duration: .5, delay: 0.2 }}
+        transition={{ duration: 0.2, delay: 0.2 }}
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <div className='w-full h-full md:ml-5 max-w-[700px]'>
           <h1 className='text-4xl md:text-left text-center font-bold md:py-4 py-3 leading-[3rem]'>
-            Specjalista 
+            Specjalista
             <span className='text-[#6366F1]'> marketingu internetowego</span>
           </h1>
           <div className='text-md leading-8'>
@@ -52,11 +52,14 @@ const About = () => {
           </div>
         </div>
         <div className='flex flex-col justify-center items-center'>
-          <img
+          <motion.img
             src={foto}
             alt='foto'
+            transition={{ duration: 1, delay: 0.2 }}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
             className='md:w-[80%] md:h-[80%] w-[50%] h-[50%] object-contain rounded-full border-2 border-[#6366F1]'
-          />
+          ></motion.img>
           <h2 className='p-4'>Pawel Stopka</h2>
           <motion.div
             transition={{ repeat: Infinity, duration: 2 }}
@@ -66,7 +69,7 @@ const About = () => {
               <BsFacebook className='md:text-5xl text-4xl p-color cursor-pointer z-0' />
             </a>
           </motion.div>
-            <p className='mt-3'>facebook.com/financepawel</p>
+          <p className='mt-3'>facebook.com/financepawel</p>
         </div>
       </motion.div>
     </section>
